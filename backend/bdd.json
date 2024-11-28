@@ -31,7 +31,22 @@
       "id": 5
     },
     {
+      "titre": "5g",
+      "auteur": "Booba",
+      "disponible": true,
       "id": 6
+    },
+    {
+      "titre": "ravuuuuuuus",
+      "auteur": "ravus ecrivain",
+      "disponible": true,
+      "id": 7
+    },
+    {
+      "titre": "un peu de gazouz",
+      "auteur": "monsieur david",
+      "disponible": true,
+      "id": 8
     }
   ],
   "utilisateurs": [

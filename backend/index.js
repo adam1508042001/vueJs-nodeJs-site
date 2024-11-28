@@ -131,7 +131,7 @@ app.post('/retourner', (req, res) => {
 //route put 
 
 //  modifier un livre
-app.put('/livres/:id', (req, res) => {
+app.put('/modiflivre/:id', (req, res) => {
     const livreId = parseInt(req.params.id, 10); 
     const { titre, auteur, disponible } = req.body; 
 
@@ -154,4 +154,29 @@ app.put('/livres/:id', (req, res) => {
     saveData(data);
 
     res.status(200).json({ message: "Livre modifié avec succès", livre });
+});
+
+
+//routes delete
+
+// DELETE supprimer un livre
+app.delete('/supplivre/:id', (req, res) => {
+    const livreId = parseInt(req.params.id, 10); 
+    
+    const data = getData();
+
+    // pour trouver l'index du livre à supprimer
+    const livreIndex = data.livres.findIndex(l => l.id === livreId);
+
+    if (livreIndex === -1) {
+        return res.status(404).json({ error: "Livre non trouvé" });
+    }
+
+    // Supprimer le livre
+    const [deletedLivre] = data.livres.splice(livreIndex, 1);
+
+    // Sauvegarder les modifications
+    saveData(data);
+
+    res.status(200).json({ message: "Livre supprimé avec succès", livre: deletedLivre });
 });
