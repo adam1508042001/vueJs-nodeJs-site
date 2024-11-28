@@ -74,7 +74,6 @@ app.post('/ajoutlivre', (req, res) => {
 //post emprunter un livre 
 app.post('/emprunter', (req, res) => {
     const { utilisateurId, livreId } = req.body;
-
     const data = getData();
     const utilisateur = data.utilisateurs.find(u => u.id === utilisateurId);
     const livre = data.livres.find(l => l.id === livreId);
@@ -85,28 +84,24 @@ app.post('/emprunter', (req, res) => {
 
     // Vérification de la disponibilité du livre
     if (livre.disponible) {
-        console.log(livre.disponible);
         livre.disponible = false;
-        console.log(livre.disponible);
-
-        
-        utilisateur.emprunts.push({ livreId, dateEmprunt: new Date().toISOString() });
+        utilisateur.emprunts.push({ livreId,  dateEmprunt: new Date().toISOString(),  });
 
         // Ajouter l'emprunt dans l'historique
-        livres.historiqueEmprunts.push({
+        data.historiqueEmprunts.push({
             utilisateurId,
             livreId,
-            dateEmprunt: new Date().toISOString(),
+            dateEmprunt: new Date(),
             dateRetour: null
         });
 
         saveData(data);
-
         res.status(200).json({ message: `Livre "${livre.titre}" emprunté avec succès` });
     } else {
         res.status(400).json({ error: "Livre non disponible" });
     }
 });
+
 
 
 app.post('/retourner', (req, res) => {

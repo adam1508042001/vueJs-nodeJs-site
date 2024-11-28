@@ -10,19 +10,19 @@
       "id": 2,
       "titre": "1984",
       "auteur": "George Orwell",
-      "disponible": true
+      "disponible": false
     },
     {
       "id": 3,
       "titre": "L'Étranger",
       "auteur": "Albert Camus",
-      "disponible": true
+      "disponible": false
     },
     {
       "id": 4,
       "titre": "Les Misérables",
       "auteur": "Victor Hugo",
-      "disponible": true
+      "disponible": false
     },
     {
       "titre": "Dolce camara",
@@ -38,7 +38,12 @@
     {
       "id": 1,
       "nom": "Afroune Adem",
-      "emprunts": []
+      "emprunts": [
+        {
+          "livreId": 3,
+          "dateEmprunt": "2024-11-28T13:16:00.317Z"
+        }
+      ]
     },
     {
       "id": 2,
@@ -47,6 +52,14 @@
         {
           "livreId": 1,
           "dateEmprunt": "2024-11-28T12:57:37.699Z"
+        },
+        {
+          "livreId": 2,
+          "dateEmprunt": "2024-11-28T13:12:38.621Z"
+        },
+        {
+          "livreId": 4,
+          "dateEmprunt": "2024-11-28T13:29:26.326Z"
         }
       ]
     }
@@ -56,13 +69,37 @@
       "utilisateurId": 1,
       "livreId": 3,
       "dateEmprunt": "2024-11-20",
-      "dateRetour": "2024-11-28T13:01:58.419Z"
+      "dateRetour": "2024-11-28T13:10:56.992Z"
     },
     {
       "utilisateurId": 2,
       "livreId": 2,
       "dateEmprunt": "2024-10-15",
       "dateRetour": "2024-10-30"
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 3,
+      "dateEmprunt": "2024-11-28T13:10:08.219Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 2,
+      "livreId": 2,
+      "dateEmprunt": "2024-11-28T13:12:38.621Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 3,
+      "dateEmprunt": "2024-11-28T13:16:00.318Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 2,
+      "livreId": 4,
+      "dateEmprunt": "2024-11-28T13:29:26.327Z",
+      "dateRetour": null
     }
   ]
 }
