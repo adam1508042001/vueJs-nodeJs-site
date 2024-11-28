@@ -8,12 +8,10 @@ const app = createApp(App)
 </script>
 
 <template>
-
+  
  <div>
   hello
  </div>
-
- 
 </template>
 
 <style scoped>
