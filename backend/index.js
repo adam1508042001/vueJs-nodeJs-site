@@ -126,3 +126,32 @@ app.post('/retourner', (req, res) => {
     res.status(200).json({ message: `Livre "${livre.titre}" retourné avec succès` });
 });
 
+
+
+//route put 
+
+//  modifier un livre
+app.put('/livres/:id', (req, res) => {
+    const livreId = parseInt(req.params.id, 10); 
+    const { titre, auteur, disponible } = req.body; 
+
+    
+    const data = getData();
+
+   
+    const livre = data.livres.find(l => l.id === livreId);
+
+    if (!livre) {
+        return res.status(404).json({ error: "Livre non trouvé" });
+    }
+
+
+    if (titre) livre.titre = titre;
+    if (auteur) livre.auteur = auteur;
+    if (disponible !== undefined) livre.disponible = disponible;
+
+ //sauvgarde
+    saveData(data);
+
+    res.status(200).json({ message: "Livre modifié avec succès", livre });
+});
