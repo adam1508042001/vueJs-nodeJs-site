@@ -1,0 +1,60 @@
+{
+    "livres": [
+      {
+        "id": 1,
+        "titre": "Le Petit Prince",
+        "auteur": "Antoine de Saint-Exupéry",
+        "disponible": true
+      },
+      {
+        "id": 2,
+        "titre": "1984",
+        "auteur": "George Orwell",
+        "disponible": true
+      },
+      {
+        "id": 3,
+        "titre": "L'Étranger",
+        "auteur": "Albert Camus",
+        "disponible": false
+      },
+      {
+        "id": 4,
+        "titre": "Les Misérables",
+        "auteur": "Victor Hugo",
+        "disponible": true
+      }
+    ],
+    "utilisateurs": [
+      {
+        "id": 1,
+        "nom": "Afroune Adem",
+        "emprunts": [
+          {
+            "livreId": 3,
+            "dateEmprunt": "2024-11-20"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nom": "Pasquer Damien",
+        "emprunts": []
+      }
+    ],
+    "historiqueEmprunts": [
+      {
+        "utilisateurId": 1,
+        "livreId": 3,
+        "dateEmprunt": "2024-11-20",
+        "dateRetour": null
+      },
+      {
+        "utilisateurId": 2,
+        "livreId": 2,
+        "dateEmprunt": "2024-10-15",
+        "dateRetour": "2024-10-30"
+      }
+    ]
+  }
+  
