@@ -1,8 +1,10 @@
 const express = require('express') 
 const app = express()
 const cors = require('cors');
+const livres = require('./bdd.json')
 
 app.use(cors());
+
 
 
 app.listen(8080, () => {  console.log('Serveur bien en écoute')})
@@ -16,5 +18,5 @@ app.listen(8080, () => {  console.log('Serveur bien en écoute')})
 //req pour requette : ce sont les infos envoyées par le user , parametres ... 
 //res reponse : configure et envoie la reponse au client 
  
-app.get('/livres', (req,res) => {    res.send(" Liste des livres")})
+app.get('/livres', (req,res) => {    res.status(200).json(livres); });
 
