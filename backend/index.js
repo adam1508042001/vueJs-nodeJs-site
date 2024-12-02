@@ -15,10 +15,10 @@ app.use(express.json());
 const getData = () => {
     try {
         const data = fs.readFileSync(path.join(__dirname, 'bdd.json'), 'utf8');
-        return JSON.parse(data);  // Convertit les données JSON en objet JavaScript
+        return JSON.parse(data);  
     } catch (err) {
         console.error('Erreur lors de la lecture du fichier JSON:', err);
-        return { livres: [], utilisateurs: [], historiqueEmprunts: [] };  // Retourne un objet vide en cas d'erreur
+        return { livres: [], utilisateurs: [], historiqueEmprunts: [] };  
     }
 };
 

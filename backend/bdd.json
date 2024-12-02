@@ -7,12 +7,6 @@
       "disponible": false
     },
     {
-      "id": 2,
-      "titre": 2001,
-      "auteur": "adem",
-      "disponible": "true"
-    },
-    {
       "id": 3,
       "titre": "L'Étranger",
       "auteur": "Albert Camus",
@@ -25,28 +19,32 @@
       "disponible": false
     },
     {
-      "titre": "Dolce camara",
-      "auteur": "Booba",
-      "disponible": true,
-      "id": 5
+      "titre": "guitare acoustique ",
+      "auteur": "matoub lounes ",
+      "image": "",
+      "disponible": false,
+      "id": 13
     },
     {
-      "titre": "5g",
-      "auteur": "Booba",
+      "titre": "le rebel",
+      "auteur": "adem afr",
+      "image": "",
       "disponible": true,
-      "id": 6
+      "id": 14
     },
     {
-      "titre": "ravuuuuuuus",
-      "auteur": "ravus ecrivain",
+      "titre": "RECHERCHE DE STAGE ",
+      "auteur": "AFROUNE ADAM",
+      "image": "",
       "disponible": true,
-      "id": 7
+      "id": 9
     },
     {
-      "titre": "un peu de gazouz",
-      "auteur": "monsieur david",
+      "titre": "skjdnf",
+      "auteur": "sdfsdf",
+      "image": "",
       "disponible": true,
-      "id": 8
+      "id": 10
     }
   ],
   "utilisateurs": [
@@ -57,6 +55,30 @@
         {
           "livreId": 3,
           "dateEmprunt": "2024-11-28T13:16:00.317Z"
+        },
+        {
+          "livreId": 2,
+          "dateEmprunt": "2024-11-28T15:18:52.343Z"
+        },
+        {
+          "livreId": 9,
+          "dateEmprunt": "2024-11-28T15:22:30.146Z"
+        },
+        {
+          "livreId": 8,
+          "dateEmprunt": "2024-11-28T15:22:33.477Z"
+        },
+        {
+          "livreId": 10,
+          "dateEmprunt": "2024-11-28T15:28:16.896Z"
+        },
+        {
+          "livreId": 13,
+          "dateEmprunt": "2024-12-02T08:30:19.659Z"
+        },
+        {
+          "livreId": 9,
+          "dateEmprunt": "2024-12-02T10:17:28.667Z"
         }
       ]
     },
@@ -114,6 +136,48 @@
       "utilisateurId": 2,
       "livreId": 4,
       "dateEmprunt": "2024-11-28T13:29:26.327Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 2,
+      "dateEmprunt": "2024-11-28T15:18:52.343Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 9,
+      "dateEmprunt": "2024-11-28T15:22:30.146Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 8,
+      "dateEmprunt": "2024-11-28T15:22:33.477Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 10,
+      "dateEmprunt": "2024-11-28T15:28:16.896Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 12,
+      "dateEmprunt": "2024-11-28T15:40:13.096Z",
+      "dateRetour": "2024-11-28T15:40:59.517Z"
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 13,
+      "dateEmprunt": "2024-12-02T08:30:19.659Z",
+      "dateRetour": null
+    },
+    {
+      "utilisateurId": 1,
+      "livreId": 9,
+      "dateEmprunt": "2024-12-02T10:17:28.667Z",
       "dateRetour": null
     }
   ]
