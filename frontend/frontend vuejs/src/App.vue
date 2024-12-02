@@ -56,7 +56,6 @@ body {
   overflow: hidden;
 }
 
-/* Header styles */
 header {
   background: linear-gradient(90deg, #6a11cb, #2575fc);
   padding: 20px;
